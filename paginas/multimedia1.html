@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia 1 - Mapas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .contenido {
+            background: var(--card-bg);
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+        .titulo-con-imagen {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        .titulo-con-imagen img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid var(--border);
+        }
+        .contenedor-mapas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+        .tarjeta-mapa {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: var(--shadow);
+        }
+        .btn-inicio {
+            display: inline-flex;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-page="multimedia1">
+    <main>
+        <header>
+            <h1>Multimedia - Mapas</h1>
+            <p>Explorá ubicaciones reales usando Google Maps embebido.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="multimedia2.html">youtube</a></li>
+                <li><a class="nav-link" href="multimedia3.html">Video Mp4 + Audio</a></li>
+            </ul>
+        </nav>
+
+        <section class="contenido">
+            <div class="titulo-con-imagen">
+                <h1>Mapas Interactivos</h1>
+                <img src="../statics/images/mapa.jpg" alt="Icono Mapas">
+            </div>
+            <p>Explorá diferentes ubicaciones del mundo mediante estos mapas.</p>
+
+            <section class="contenedor-mapas">
+                <div class="tarjeta-mapa">
+                    <h2>Asunción - Paraguay</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.427781057104!2d-57.65020858498135!3d-25.28673098385213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da82c30f082d3%3A0x7495981dcb612e98!2sAsunci%C3%B3n!5e0!3m2!1ses-419!2spy!4v1696800000000" width="100%" height="260" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="tarjeta-mapa">
+                    <h2>Ypane - Paraguay</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115267.71106777438!2d-57.59325432352677!3d-25.467802746440977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945c533f5fd85bcd%3A0x9c271a6901e83ac1!2zWXBhbsOp!5e0!3m2!1ses-419!2spy!4v1764539765119!5m2!1ses-419!2spy" width="100%" height="260" allowfullscreen loading="lazy"></iframe>
+                </div>
+
+                <div class="tarjeta-mapa">
+                    <h2>Luque - Paraguay</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230946.77484796167!2d-57.61105515534595!3d-25.252300990865063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da544f2196057%3A0x867a1a071b8fe4c2!2sLuque!5e0!3m2!1ses-419!2spy!4v1764539881437!5m2!1ses-419!2spy" width="100%" height="260" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <a href="../index.html" class="btn btn-inicio">Volver al Inicio</a>
+        </section>
+
+        <footer style="text-align:center; margin-top: 40px; padding: 10px; color:#cbd5f5;">
+            Proyecto desarrollado por Nestor Diosnel Ruiz Rotela
+        </footer>
+    </main>
+</body>
+</html>

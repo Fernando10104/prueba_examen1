@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco - Tabla de clientes</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="banco-tabla">
+    <main>
+        <header>
+            <h1>Banco Enciso - Libro de Clientes</h1>
+            <p>Ejemplo de tablas dinámicas y estilos responsivos.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="banco_miembros.html">Miembros destacados</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <h2>Listado actualizado</h2>
+            <div class="table-wrapper">
+                <table id="tablaBanco">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Cliente</th>
+                            <th>DNI</th>
+                            <th>Tipo de cuenta</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="5">Cargando...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>Banco Tabla | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/calculos.js"></script>
+</body>
+</html>

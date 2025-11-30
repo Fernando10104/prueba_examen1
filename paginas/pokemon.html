@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéAPI</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="pokemon">
+    <main>
+        <header>
+            <h1>PokéDex Virtual</h1>
+            <p>Busca por nombre o número.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="rick_morty.html">Rick & Morty</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <form id="formPokemon" class="flex">
+                <div style="flex:1;">
+                    <label for="pokemon">Pokémon</label>
+                    <input type="text" id="pokemon" name="pokemon" placeholder="Ej: pikachu" required>
+                </div>
+                <button class="btn" type="submit">Buscar</button>
+            </form>
+            <div id="salidaPokemon" class="api-result"></div>
+        </section>
+
+        <footer>
+            <p>Pokémon | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

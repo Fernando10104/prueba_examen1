@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="galeria">
+    <main>
+        <header>
+            <h1>Galería Dinámica</h1>
+            <p>Haz clic en una imagen para verla en foco.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="imagenes.html">Imágenes</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card" data-galeria>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=60" alt="Conferencia" />
+                <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=60" alt="Cowork" />
+                <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=600&q=60" alt="Creatividad" />
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=60" alt="UX" />
+            </div>
+        </section>
+
+        <section class="section-card" id="focoGaleria">
+            <p>Selecciona una imagen para mostrarla aquí.</p>
+        </section>
+
+        <footer>
+            <p>Galería | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

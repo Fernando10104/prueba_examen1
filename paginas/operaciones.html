@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="operaciones">
+    <main>
+        <header>
+            <h1>Operaciones y Finanzas</h1>
+            <p>Calculadora de operaciones básicas y proyección bancaria.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <h2>Operaciones Básicas</h2>
+            <form id="formOperacionesBasicas" class="grid grid-2">
+                <div>
+                    <label for="numeroA">Número A</label>
+                    <input type="number" id="numeroA" name="numeroA" required>
+                </div>
+                <div>
+                    <label for="numeroB">Número B</label>
+                    <input type="number" id="numeroB" name="numeroB" required>
+                </div>
+                <div style="grid-column: 1 / -1;">
+                    <button class="btn" type="submit">Calcular</button>
+                </div>
+            </form>
+            <div id="resultadoOperaciones" style="margin-top: 20px;"></div>
+        </section>
+
+        <section class="section-card">
+            <h2>Calculadora Financiera</h2>
+            <form id="formFinanzas" class="grid grid-2">
+                <div>
+                    <label for="capital">Capital inicial</label>
+                    <input type="number" id="capital" name="capital" min="0" step="0.01" required>
+                </div>
+                <div>
+                    <label for="tasa">Tasa anual (%)</label>
+                    <input type="number" id="tasa" name="tasa" min="0" step="0.1" required>
+                </div>
+                <div>
+                    <label for="meses">Meses</label>
+                    <input type="number" id="meses" name="meses" min="1" required>
+                </div>
+                <div style="grid-column: 1 / -1;">
+                    <button class="btn btn-secondary" type="submit">Simular</button>
+                </div>
+            </form>
+            <div id="resumenFinanciero" style="margin-top: 20px;"></div>
+        </section>
+
+        <footer>
+            <p>Operaciones | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/calculos.js"></script>
+</body>
+</html>

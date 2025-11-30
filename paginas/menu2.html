@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú 2 - Sidebar</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .layout {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            min-height: 70vh;
+            gap: 20px;
+        }
+        .sidebar {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 24px;
+        }
+        .sidebar ul {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+        }
+        .content {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 24px;
+        }
+        @media (max-width: 768px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Menú lateral responsive</h1>
+            <p>Sidebar con secciones agrupadas.</p>
+        </header>
+
+        <div class="section-card">
+            <div class="layout">
+                <aside class="sidebar">
+                    <h3>Panel</h3>
+                    <ul>
+                        <li><a class="nav-link" href="#">Dashboard</a></li>
+                        <li><a class="nav-link" href="#">Usuarios</a></li>
+                        <li><a class="nav-link" href="#">Reportes</a></li>
+                        <li><a class="nav-link" href="#">Ajustes</a></li>
+                    </ul>
+                </aside>
+                <section class="content">
+                    <h3>Contenido principal</h3>
+                    <p>El menú lateral se adapta a dispositivos pequeños pasando a modo stack.</p>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p>Menú 2 | Fernando Enciso</p>
+        </footer>
+    </main>
+</body>
+</html>

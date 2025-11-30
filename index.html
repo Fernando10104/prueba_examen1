@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examen</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body data-page="inicio">
+    <main>
+        <header>
+            <h1>Examen</h1>
+            <p>Contenido unificado con HTML, CSS y JavaScript + APIs públicas</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="paginas/html_basico.html">HTML Básico</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Banco ▾</a>
+                    <ul class="submenu">
+                        <li><a href="paginas/banco_tabla.html">Tabla de clientes</a></li>
+                        <li><a href="paginas/banco_miembros.html">Miembros destacados</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="paginas/galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/operaciones.html">Operaciones</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Formularios ▾</a>
+                    <ul class="submenu">
+                        <li><a href="paginas/matriculacion.html">Matriculación</a></li>
+                        <li><a href="paginas/prueba.html">Prueba diagnóstica</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">APIs ▾</a>
+                    <ul class="submenu">
+                        <li><a href="paginas/clima.html">Clima</a></li>
+                        <li><a href="paginas/paises.html">Países</a></li>
+                        <li><a href="paginas/pokemon.html">Pokémon</a></li>
+                        <li><a href="paginas/rick_morty.html">Rick & Morty</a></li>
+                        <li><a href="paginas/criptomonedas.html">Criptomonedas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Multimedia ▾</a>
+                    <ul class="submenu">
+                        <li><a href="paginas/multimedia1.html">Mapas</a></li>
+                        <li><a href="paginas/multimedia2.html">YouTube</a></li>
+                        <li><a href="paginas/multimedia3.html">Videos y audio</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menús ▾</a>
+                    <ul class="submenu">
+                        <li><a href="paginas/menu1.html">Menú 1</a></li>
+                        <li><a href="paginas/menu2.html">Menú 2</a></li>
+                        <li><a href="paginas/menu3.html">Menú 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="paginas/redsocial.html">Red Social</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/comentarios.html">Comentarios</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <h2>Bienvenida interactiva</h2>
+            <p>Guardamos tu información en localStorage para personalizar la experiencia.</p>
+            <form id="formBienvenida" class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 18px;">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="1" required>
+                </div>
+                <div style="align-self: end;">
+                    <button class="btn" type="submit">Ingresar</button>
+                </div>
+            </form>
+            <div id="estadoEdad" class="alert alert-info" style="margin-top: 16px;">Esperando datos...</div>
+            <div id="saludoPersonalizado" class="section-card hidden" style="margin-top: 16px;"></div>
+        </section>
+
+        <section id="resumenSitio" class="section-card hidden">
+            <h2>Descripción general del sitio</h2>
+            <p>Este trabajo consolida todos los módulos: desde HTML básico hasta consumo de APIs.</p>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Bloques Teóricos</h3>
+                    <ul>
+                        <li>HTML básico + productos</li>
+                        <li>Tablas bancarias y listados de miembros</li>
+                        <li>Menús receptivos y contenidos multimedia</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Prácticas con APIs</h3>
+                    <ul>
+                        <li>Clima con OpenWeather (fallback wttr.in)</li>
+                        <li>Países (REST Countries) y PokéAPI</li>
+                        <li>Rick & Morty + CoinGecko</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Mapeo de menús</h2>
+            <div class="cards-list">
+                <div class="card">
+                    <h3>HTML básico</h3>
+                    <p>Estructura, listas y producto destacado.</p>
+                </div>
+                <div class="card">
+                    <h3>Banco</h3>
+                    <p>Tablas responsivas + tarjetas de clientes.</p>
+                </div>
+                <div class="card">
+                    <h3>Operaciones</h3>
+                    <p>Calculadora matemática y financiera.</p>
+                </div>
+                <div class="card">
+                    <h3>Formularios</h3>
+                    <p>Matriculación con progreso y prueba diagnóstica.</p>
+                </div>
+                <div class="card">
+                    <h3>APIs</h3>
+                    <p>Cinco integraciones reales con fetch/async.</p>
+                </div>
+                <div class="card">
+                    <h3>Red social & noticias</h3>
+                    <p>Botones de like con contador y secciones interactivas.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 | Fernando Enciso - Trabajo Final Integral</p>
+        </footer>
+    </main>
+
+    <script src="js/edad.js"></script>
+    <script src="js/bienvenida.js"></script>
+</body>
+</html>

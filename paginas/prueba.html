@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Diagnóstica</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="prueba">
+    <main>
+        <header>
+            <h1>Mini examen</h1>
+            <p>Selecciona las respuestas correctas para repasar.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="matriculacion.html">Matriculación</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <form id="formPrueba" class="grid">
+                <div class="card">
+                    <p><strong>1.</strong> Etiqueta principal para contenido en HTML5:</p>
+                    <label><input type="radio" name="pregunta1" value="html" required> &lt;main&gt;</label>
+                    <label><input type="radio" name="pregunta1" value="table"> &lt;table&gt;</label>
+                </div>
+                <div class="card">
+                    <p><strong>2.</strong> Técnica recomendada para layout responsivo:</p>
+                    <label><input type="radio" name="pregunta2" value="float" required> floats</label>
+                    <label><input type="radio" name="pregunta2" value="css-grid"> CSS Grid</label>
+                </div>
+                <div class="card">
+                    <p><strong>3.</strong> Palabra clave para funciones asíncronas:</p>
+                    <label><input type="radio" name="pregunta3" value="async" required> async/await</label>
+                    <label><input type="radio" name="pregunta3" value="var"> var</label>
+                </div>
+                <div class="card">
+                    <p><strong>4.</strong> Arquitectura típica para servicios públicos:</p>
+                    <label><input type="radio" name="pregunta4" value="api-rest" required> API REST</label>
+                    <label><input type="radio" name="pregunta4" value="ftp"> FTP</label>
+                </div>
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+            <div id="resultadoPrueba" style="margin-top: 20px;"></div>
+        </section>
+
+        <footer>
+            <p>Prueba | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/formulario_prueba.js"></script>
+</body>
+</html>

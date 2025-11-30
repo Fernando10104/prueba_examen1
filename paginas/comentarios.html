@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios Interactivos</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="comentarios">
+    <main>
+        <header>
+            <h1>Secciones con likes</h1>
+            <p>Cada bloque suma likes individualmente.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <div class="cards-list">
+                <article class="card">
+                    <h3>Frontend</h3>
+                    <p>Tips de animaciones y CSS moderno.</p>
+                    <button class="like-button" data-like="5">👍 Me gusta <span>5</span></button>
+                </article>
+                <article class="card">
+                    <h3>APIs</h3>
+                    <p>Buenas prácticas con fetch y errores.</p>
+                    <button class="like-button" data-like="8">👍 Me gusta <span>8</span></button>
+                </article>
+                <article class="card">
+                    <h3>UI/UX</h3>
+                    <p>Componentes accesibles y consistentes.</p>
+                    <button class="like-button" data-like="3">👍 Me gusta <span>3</span></button>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <p>Comentarios | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

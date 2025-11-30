@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Países</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="paises">
+    <main>
+        <header>
+            <h1>Información de Países</h1>
+            <p>REST Countries con detalles útiles.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="clima.html">Clima</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <form id="formPaises" class="flex">
+                <div style="flex:1;">
+                    <label for="pais">Nombre del país</label>
+                    <input type="text" id="pais" name="pais" placeholder="Ej: Argentina" required>
+                </div>
+                <button class="btn" type="submit">Buscar</button>
+            </form>
+            <div id="salidaPaises" class="api-result"></div>
+        </section>
+
+        <footer>
+            <p>Países | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

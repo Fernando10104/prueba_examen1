@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú 3 - Mega menú</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .mega-nav {
+            position: relative;
+        }
+        .mega-nav > button {
+            width: 100%;
+        }
+        .mega-panel {
+            margin-top: 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+            gap: 18px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Mega menú</h1>
+            <p>Despliegue de subcategorías en panel completo.</p>
+        </header>
+
+        <section class="section-card">
+            <div class="mega-nav">
+                <button class="btn">Abrir categorías</button>
+                <div class="mega-panel">
+                    <div>
+                        <h4>Diseño</h4>
+                        <ul>
+                            <li>UI Kits</li>
+                            <li>Wireframes</li>
+                            <li>Color</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Desarrollo</h4>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>DevOps</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li>Documentación</li>
+                            <li>Plantillas</li>
+                            <li>Communities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Menú 3 | Fernando Enciso</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Destacadas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="noticias">
+    <main>
+        <header>
+            <h1>Noticias del Campus</h1>
+            <p>Tres titulares con botón de like.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <article class="card">
+                <h3>Laboratorio 24/7</h3>
+                <p>Se habilitó un nuevo espacio de práctica continua.</p>
+                <button class="like-button" data-like="10">❤️ Me gusta <span>10</span></button>
+            </article>
+            <article class="card" style="margin-top:16px;">
+                <h3>Conferencia IA</h3>
+                <p>Expertos de la industria visitan el instituto.</p>
+                <button class="like-button" data-like="6">❤️ Me gusta <span>6</span></button>
+            </article>
+            <article class="card" style="margin-top:16px;">
+                <h3>Becas 2026</h3>
+                <p>Se extienden las becas para carreras STEAM.</p>
+                <button class="like-button" data-like="4">❤️ Me gusta <span>4</span></button>
+            </article>
+        </section>
+
+        <footer>
+            <p>Noticias | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

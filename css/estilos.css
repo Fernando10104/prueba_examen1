@@ -1,0 +1,431 @@
+
+:root {
+    --bg-color: #0f172a;
+    --bg-alt: #111c3a;
+    --card-bg: rgba(15, 23, 42, 0.85);
+    --primary: #6366f1;
+    --secondary: #0ea5e9;
+    --accent: #f472b6;
+    --success: #22c55e;
+    --warning: #facc15;
+    --danger: #ef4444;
+    --text: #f1f5f9;
+    --muted: rgba(241, 245, 249, 0.7);
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: 0 20px 45px rgba(15, 23, 42, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: radial-gradient(circle at top, #1e1b4b, #0f172a 45%);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+main {
+    width: min(1200px, 95%);
+    margin: auto;
+    padding: 40px 0 80px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
+}
+
+header p {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+/* =============================
+   TARJETAS Y SECCIONES GENERALES
+   ============================= */
+
+.section-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+}
+
+.section-card h2 {
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.section-card p {
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+
+/* =============================
+   NAVEGACIÓN PRINCIPAL
+   ============================= */
+
+nav {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    margin-bottom: 30px;
+    padding: 14px 22px;
+    box-shadow: var(--shadow);
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link:hover {
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: rgba(15, 23, 42, 0.97);
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    display: none;
+    min-width: 230px;
+    z-index: 20;
+}
+
+.nav-item:hover > .submenu {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 12px;
+    transition: 0.2s ease;
+    color: var(--muted);
+}
+
+.submenu li a:hover {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--text);
+}
+
+/* =============================
+   BOTONES
+   ============================= */
+
+.btn {
+    border: none;
+    border-radius: 999px;
+    padding: 12px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(120deg, var(--primary), var(--secondary));
+    color: white;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.01);
+}
+
+.btn-secondary {
+    background: linear-gradient(120deg, var(--accent), var(--primary));
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--text);
+}
+
+/* =============================
+   FORMULARIOS
+   ============================= */
+
+form {
+    display: grid;
+    gap: 16px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: rgba(15, 23, 42, 0.4);
+    color: var(--text);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary);
+}
+
+/* =============================
+   TABLAS
+   ============================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+thead {
+    background: rgba(99, 102, 241, 0.25);
+}
+
+thead th {
+    padding: 14px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--border);
+}
+
+td {
+    padding: 14px;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* =============================
+   GRIDS Y CARDS
+   ============================= */
+
+.grid {
+    display: grid;
+    gap: 18px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: rgba(15, 23, 42, 0.7);
+}
+
+/* =============================
+   ALERTAS Y MENSAJES
+   ============================= */
+
+.alert {
+    padding: 16px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+.alert-info { background: rgba(14, 165, 233, 0.15); }
+.alert-success { background: rgba(34, 197, 94, 0.15); }
+.alert-warning { background: rgba(250, 204, 21, 0.15); }
+.alert-danger { background: rgba(239, 68, 68, 0.15); }
+
+/* =============================
+   COMPONENTES ESPECIALES
+   ============================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.gallery-grid img {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.media-card {
+    text-align: center;
+}
+
+.like-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.like-button.active {
+    background: rgba(244, 114, 182, 0.2);
+    border-color: var(--accent);
+}
+
+/* API result cards */
+
+.api-result {
+    margin-top: 24px;
+}
+
+.api-result .card {
+    animation: fadeIn 0.6s ease both;
+}
+
+.badge {
+    display: inline-flex;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, 0.15);
+    font-size: 0.85rem;
+}
+
+/* =============================
+   FOOTER
+   ============================= */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* =============================
+   UTILIDADES
+   ============================= */
+
+.flex {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.tag-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+
+@media (max-width: 768px) {
+    nav {
+        overflow-x: auto;
+    }
+
+    .section-card {
+        padding: 24px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+}
+
+/* =============================
+   ANIMACIONES
+   ============================= */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.3); }
+    70% { box-shadow: 0 0 0 20px rgba(99, 102, 241, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); }
+}

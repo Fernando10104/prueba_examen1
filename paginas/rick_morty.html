@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty API</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="rick-morty">
+    <main>
+        <header>
+            <h1>Rick & Morty</h1>
+            <p>Consulta personajes por ID.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="pokemon.html">Pokémon</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <form id="formRick" class="flex">
+                <div style="flex:1;">
+                    <label for="personaje">ID (1-826)</label>
+                    <input type="number" id="personaje" name="personaje" min="1" max="826" required>
+                </div>
+                <button class="btn" type="submit">Buscar</button>
+                <button class="btn btn-outline" type="button" id="btnRickRandom">Aleatorio</button>
+            </form>
+            <div id="salidaRick" class="api-result"></div>
+        </section>
+
+        <footer>
+            <p>Rick & Morty | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

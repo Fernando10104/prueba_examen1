@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API del Clima</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="clima">
+    <main>
+        <header>
+            <h1>Consulta del Clima</h1>
+            <p>OpenWeather + respaldo wttr.in</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="paises.html">Países</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <form id="formClima" class="flex">
+                <div style="flex:1;">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Buenos Aires" required>
+                </div>
+                <button class="btn" type="submit">Buscar</button>
+            </form>
+            <div id="salidaClima" class="api-result"></div>
+        </section>
+
+        <footer>
+            <p>Clima | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

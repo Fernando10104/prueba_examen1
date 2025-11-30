@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptomonedas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="criptomonedas">
+    <main>
+        <header>
+            <h1>CoinGecko API</h1>
+            <p>Consulta cotizaciones en tiempo real.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="rick_morty.html">Rick & Morty</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <form id="formCripto" class="flex">
+                <div style="flex:1;">
+                    <label for="cripto">Criptomoneda</label>
+                    <select id="cripto" name="cripto">
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option>
+                        <option value="tether">Tether</option>
+                        <option value="solana">Solana</option>
+                        <option value="cardano">Cardano</option>
+                        <option value="dogecoin">Dogecoin</option>
+                    </select>
+                </div>
+                <button class="btn" type="submit">Consultar</button>
+            </form>
+            <div id="salidaCripto" class="api-result"></div>
+        </section>
+
+        <footer>
+            <p>Criptomonedas | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

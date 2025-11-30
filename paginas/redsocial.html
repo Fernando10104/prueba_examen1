@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Red Social</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body data-page="redsocial">
+    <main>
+        <header>
+            <h1>Feed Multimedia</h1>
+            <p>Cada card incluye video, imagen y audio + botón de like.</p>
+        </header>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li><a class="nav-link" href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
+
+        <section class="section-card">
+            <div class="cards-list">
+                <article class="card media-card">
+                    <h3>Video destacado</h3>
+                    <video controls width="100%">
+                        <source src="/statics/video/perifericos baratos.mp4" type="video/mp4">
+                    </video>
+                    <p style="margin: 12px 0 6px;">perifericos baratos del walmart</p>
+                    <div class="like-wrapper">
+                        <span>❤️</span>
+                        <button class="like-button" data-like="12">Me gusta <span>12</span></button>
+                    </div>
+                </article>
+
+                <article class="card media-card">
+                    <h3>Foto del día</h3>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Oficina creativa">
+                    <p style="margin: 12px 0 6px;">Equipo de diseño afinando los últimos detalles del proyecto.</p>
+                    <div class="like-wrapper">
+                        <span>❤️</span>
+                        <button class="like-button" data-like="8">Me gusta <span>8</span></button>
+                    </div>
+                </article>
+
+                <article class="card media-card">
+                    <h3>Audio podcast</h3>
+                    <audio controls style="width:100%;">
+                        <source src="/statics/audio/popcast.mp4" type="audio/mp4">
+                    </audio>
+                    <p style="margin: 12px 0 6px;">Conversamos sobre gta 6 mas caro.</p>
+                    <div class="like-wrapper">
+                        <span>❤️</span>
+                        <button class="like-button" data-like="5">Me gusta <span>5</span></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <p>Red Social | Fernando Enciso</p>
+        </footer>
+    </main>
+
+    <script src="../js/apis.js"></script>
+</body>
+</html>

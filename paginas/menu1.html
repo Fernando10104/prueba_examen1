@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú 1 - Navbar fijo</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        .demo-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            padding: 12px 24px;
+            border-radius: 16px;
+        }
+        .demo-navbar ul {
+            display: flex;
+            gap: 12px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Menú principal fijo</h1>
+            <p>Ejemplo de barra horizontal con CTA.</p>
+        </header>
+
+        <div class="section-card">
+            <nav class="demo-navbar">
+                <strong>EncisoDev</strong>
+                <ul>
+                    <li><a class="nav-link" href="#">Inicio</a></li>
+                    <li><a class="nav-link" href="#">Servicios</a></li>
+                    <li><a class="nav-link" href="#">Portfolio</a></li>
+                    <li><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+                <button class="btn">Agendar</button>
+            </nav>
+        </div>
+
+        <footer>
+            <p>Menú 1 | Fernando Enciso</p>
+        </footer>
+    </main>
+</body>
+</html>
